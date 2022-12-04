@@ -66,3 +66,22 @@ in `planning.json`, which contains around 10k records.
 
 For any additional questions on the task please feel free to email
 `sundara.amancharla@aspaara.com`.
+
+## How to run
+### To Ingest data
+* run python python Ingestion.py -p [path_to_file.txt]
+
+### To run the API
+* Activate env using "venv\Scripts\activate.bat"
+* install requirements using "python -m pip install -r requirements.txt" 
+
+#### exisiting APIs
+http://127.0.0.1/talents/
+*Retrieves all talents information paginated
+
+
+http://127.0.0.1/talent/{id}
+*retrieves talent information for the specific id
+
+http://127.0.0.1/openings/
+*Retrieves openings ordered per original_id and it is paginated
